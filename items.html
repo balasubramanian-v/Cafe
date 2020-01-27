@@ -4,16 +4,17 @@
     <title>Available Items </title>
 </head>
 
-<body>
+<bod >
+   
 
    <div style="float: right">
         <input list="items" name="items" >
         <datalist id="items">
-          <option value="Cofee">
-          <option value="Tea">
-          <option value="Sandwich">
-          <option value="Cold Cofee">
-          <option value="Hot Milk">
+          <option value="Coffee">
+          <option value="Mocktails">
+          <option value="ChocoLava">
+          <option value="Butterscotch">
+          
         </datalist>
         <input type="submit" value="Search">
       </form>
@@ -23,7 +24,7 @@
 <div class="sidebar" style="width: 25%">
 <h3>Menu</h3>
 <ul style="width: 200px;list-style-type: none">
-    <li><a href="#hot">Hot Drinks</a></li> 
+    <li><a href="#hot" onclick="">Hot Drinks</a></li> 
         <li><a href="#soft">Soft Drinks</a></li>
             <li><a href="#cookies">Cookies</a></li>
                 <li><a href="#cakes">Cakes</a></li>
@@ -36,15 +37,18 @@
 
 
 <section id="hot">
-    <div class="column">
-        message from hot drinks
+    <h2><b>Hot Drinks</b></h2>
+   <ul> <div class="column">
+       <li class="select"  onclick="select()" >Coffee</li>
+     
+    </div>
+    <div class="column" >
+        <li class="select" onclick="select()">Cappuccino</li>
     </div>
     <div class="column">
-        message from hot drinks
+       <li class="select"onclick="select()">Tea</li> 
     </div>
-    <div class="column">
-        message from hot drinks
-    </div>
+</ul>
    
 </section>
 </div>
@@ -53,53 +57,61 @@
 <div class="row">
 
 <section id="soft">
+    <h2><b>Soft Drinks</b></h2>
     <div class="column">
-    message from Soft drinks
+   <li class="select"onclick="select()">Fresh Juices</li>
 </div>
 <div class="column">
-    message from Soft drinks
+   <li class="select"onclick="select()">Mocktails</li>
 </div>
 <div class="column">
-    message from Soft drinks
+   <li class="select"onclick="select()">Soda</li>
 </div>
 </section>
 </div>
 
 <div class="row">
 
-
-
-<section id="Cookies">
+<section id="cookies">
+    <h2><b>Cookies</b></h2>
     <div class="column">
-        message from Cookies
+       <li class="select"onclick="select()">Oreo</li>
     </div>
     <div class="column">
-        message from Cookies
+       <li class="select"onclick="select()">Dark Fantasy</li>
     </div>
-    <div class="column">
-        message from Cookies
-    </div>
+    
 </section>
 </div>
 
 <div class="row">
 <section id="cakes">
+    <h2><b>Cakes</b></h2>
     <div class="column">
-        message from cakes
+        <li class="select"onclick="select()">ChocoLava</li>
     </div>
     <div class="column">
-        message from cakes
+        <li class="select"onclick="select()">Butterscotch</li>
     </div>
     <div class="column">
-        message from cakes
+        <li class="select"onclick="select()">Vanila</li>
     </div>
     
     
 
 </section>
+<div id="demo">
+
+</div>
+
 </div>
 
 </div>
 
-</body>
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+    <script src="./script.js"></script>
+
+</bod>
 </html>
